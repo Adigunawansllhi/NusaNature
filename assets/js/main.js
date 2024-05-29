@@ -212,20 +212,3 @@
   }
   window.addEventListener('load', aosInit);
 })();
-
-$('#booking-form').on('submit', function (e) {
-  e.preventDefault();
-
-  // Tampilkan data form di container hasil
-  $('#result-name').text($('#name').val());
-  $('#result-email').text($('#email').val());
-  $('#result-phone').text($('#phone').val());
-  $('#result-package').text($('#package option:selected').text());
-  $('#result-date').text($('#date').val());
-  $('#result-guests').text($('#guests').val());
-
-  // Sembunyikan form dan tampilkan hasil
-  $('.form-container').hide();
-  $('#result-container').show();
-});
-
